@@ -10,7 +10,7 @@ using namespace std;
 
 using namespace Eigen;
 
-#define MATRIX_SIZE 50
+#define MATRIX_SIZE 100
 
 /****************************
 * 本程序演示了 Eigen 基本类型的使用
@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
   cout << "[1,2,3;4,5,6]*[3,2,1]=" << result.transpose() << endl;
 
   Matrix<float, 2, 1> result2 = matrix_23 * vd_3d;
-  cout << "[1,2,3;4,5,6]*[4,5,6]: " << result2.transpose() << endl;
+  cout << "[1,2,3;4,5,6]*[4,5,6]=" << result2.transpose() << endl;
 
   // 同样你不能搞错矩阵的维度
   // 试着取消下面的注释，看看Eigen会报什么错
